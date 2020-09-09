@@ -21,7 +21,7 @@ namespace Snake
         }
         
         public static SnakeGame New => new SnakeGame(
-            new ConsoleVisualizer(), 
+            new BufferedConsoleVisualizer(), 
             new ConsoleController(),
             GameState.New);
 
