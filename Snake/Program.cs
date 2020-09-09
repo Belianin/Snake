@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Snake
 {
@@ -6,7 +7,7 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            new SnakeGame().Play();
+            SnakeGame.New.Play(CancellationToken.None);
         }
     }
 }

@@ -1,6 +1,9 @@
 namespace Snake
 {
-    public class Command
+    public enum Command
     {
+        Forward,
+        Right,
+        Left
     }
 }
